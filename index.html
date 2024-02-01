@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrace - Coming Soon</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .parallax {
+            /* The image used */
+            background-image: url('CelebraceLogo.png');
+
+            /* Set a specific height */
+            min-height: 100%; 
+
+            /* Ensure the entire image is visible */
+            background-size: contain; /* Or '100% 100%' to stretch and fill the area */
+            background-position: center center;
+
+            /* Image does not repeat */
+            background-repeat: no-repeat;
+
+            /* Choose whether you want the image to scroll with the page or be fixed */
+            background-attachment: fixed; /* This can be 'scroll' for scrolling with the page */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parallax">
+    <div class="content">
+        <h1>Coming Soon</h1>
+        <p>We are in stealth mode. Contact us to learn more.</p>
+        <a href="mailto:support@celebrace.com">support@celebrace.com</a>
+    </div>
+</div>
+
+</body>
+</html>
