@@ -23,11 +23,16 @@
     background-size: contain; /* Default for mobile */
         }
 
-        @media (min-width: 1024px) {
-            .parallax {
-                background-size: 60% auto; /* Adjust based on actual size needed */
-            }
+    @media (max-width: 768px) {
+        .parallax {
+            background-position: top center; /* Adjusts logo to top */
+            min-height: 300px; /* Ensures enough space for the logo */
         }
+        .content {
+            top: 60%; /* Adjust content position on mobile */
+        }
+    }
+
         .content {
             position: absolute;
             top: 40%;
