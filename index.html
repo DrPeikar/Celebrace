@@ -11,30 +11,26 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            font-family: 'Arial', sans-serif; /* Added Arial font here */
+            font-family: 'Arial', sans-serif;
         }
         
         .parallax {
-            /* The image used */
-            background-image: url('CelebraceLogo.png');
-
-            /* Set a specific height */
-            min-height: 100%; 
-
-            /* Ensure the entire image is visible */
-            background-size: contain; /* Or '100% 100%' to stretch and fill the area */
-            background-position: center center;
-
-            /* Image does not repeat */
-            background-repeat: no-repeat;
-
-            /* Choose whether you want the image to scroll with the page or be fixed */
-            background-attachment: fixed; /* This can be 'scroll' for scrolling with the page */
+    background-image: url('CelebraceLogo.png');
+    min-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Default for mobile */
         }
 
+        @media (min-width: 1024px) {
+            .parallax {
+                background-size: 60% auto; /* Adjust based on actual size needed */
+            }
+        }
         .content {
             position: absolute;
-            top: 30%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(255, 255, 255, 0.8);
@@ -42,8 +38,8 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            width: 20%;
-            max-width: 600px;
+            width: auto;
+            max-width: 90%;
         }
 
         h1 {
@@ -51,7 +47,7 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         a {
@@ -59,7 +55,7 @@
             margin-top: 20px;
             text-decoration: none;
             background-color: #007BFF;
-            color: #ffffff;
+            color: white;
             padding: 10px 20px;
             border-radius: 5px;
             font-weight: bold;
@@ -67,6 +63,13 @@
 
         a:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                width: 80%;
+                padding: 10px;
+            }
         }
     </style>
 </head>
