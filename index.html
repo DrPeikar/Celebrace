@@ -20,22 +20,14 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain; /* Default for mobile */
+    background-size: cover; /* Default for mobile */
         }
 
-    @media (max-width: 768px) {
-        .content {
-            position: absolute;
-            top: auto; /* Remove the top property */
-            bottom: 20vh; /* Position it from the bottom instead */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%; /* Adjust width as needed */
-            padding: 10px;
+        @media (min-width: 1024px) {
+            .parallax {
+                background-size: 60% auto; /* Adjust based on actual size needed */
+            }
         }
-    }
-
-
         .content {
             position: absolute;
             top: 40%;
