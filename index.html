@@ -24,14 +24,17 @@
         }
 
     @media (max-width: 768px) {
-        .parallax {
-            background-position: top center; /* Adjusts logo to top */
-            min-height: 300px; /* Ensures enough space for the logo */
-        }
         .content {
-            top: 100%; /* Adjust content position on mobile */
+            position: absolute;
+            top: auto; /* Remove the top property */
+            bottom: 20vh; /* Position it from the bottom instead */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%; /* Adjust width as needed */
+            padding: 10px;
         }
     }
+
 
         .content {
             position: absolute;
